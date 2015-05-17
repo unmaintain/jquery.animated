@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="imagetoolbar" content="no">
+		<meta name="msthemecompatible" content="no">
+		<meta name="cleartype" content="on">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="address=no">
+		<title>jQuery Animated</title>
+		<meta name="description" content="jQuery Placeholder">
+		<meta name="keywords" content="Useful helper for Animate.css.">
+		<meta name="copyright" content="©felixexter">
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+			body {
+				background-color: #eee;
+			}
+
+			.h1 {
+				margin-top: 40px;
+				margin-bottom: 40px;
+				font-family: arial, sans-serif;
+				font-size: 24px;
+				line-height: 36px;
+				text-align: center;
+			}
+
+			.shake-box {
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 40px;
+				max-width: 400px;
+				height: 100px;
+				font-family: arial, sans-serif;
+				font-size: 16px;
+				line-height: 100px;
+				text-align: center;
+				color: #000;
+				background-color: #fff;
+				box-shadow: 0 0 1px rgba(0, 0, 0, .5);
+				cursor: pointer;
+			}
+
+			.animated {
+				-webkit-animation-duration: 1s;
+				animation-duration: 1s;
+				-webkit-animation-fill-mode: both;
+				animation-fill-mode: both;
+			}
+
+			.animated.infinite {
+				-webkit-animation-iteration-count: infinite;
+				animation-iteration-count: infinite;
+			}
+
+			@-webkit-keyframes shake {
+				0%,
+				100% {
+					-webkit-transform: translate3d(0, 0, 0);
+					transform: translate3d(0, 0, 0);
+				}
+
+				10%,
+				30%,
+				50%,
+				70%,
+				90% {
+					-webkit-transform: translate3d(-10px, 0, 0);
+					transform: translate3d(-10px, 0, 0);
+				}
+
+				20%,
+				40%,
+				60%,
+				80% {
+					-webkit-transform: translate3d(10px, 0, 0);
+					transform: translate3d(10px, 0, 0);
+				}
+			}
+
+			@keyframes shake {
+				0%,
+				100% {
+					-webkit-transform: translate3d(0, 0, 0);
+					transform: translate3d(0, 0, 0);
+				}
+
+				10%,
+				30%,
+				50%,
+				70%,
+				90% {
+					-webkit-transform: translate3d(-10px, 0, 0);
+					transform: translate3d(-10px, 0, 0);
+				}
+
+				20%,
+				40%,
+				60%,
+				80% {
+					-webkit-transform: translate3d(10px, 0, 0);
+					transform: translate3d(10px, 0, 0);
+				}
+			}
+
+			.shake {
+				-webkit-animation-name: shake;
+				animation-name: shake;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 class="h1">jQuery Animated Example</h1>
+		<div class="shake-box" id="animated1">Shake me!</div>
+		<div class="shake-box" id="animated2">Shake with callback!</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="jquery.animated.min.js"></script>
+		<script>
+			$(function () {
+				$('#animated1').on('click', function () {
+					$(this).animated('shake');
+				});
+
+				$('#animated2').on('click', function () {
+					$(this).animated('shake', function () {
+						alert('Thank you for shake!');
+					});
+				});
+			});
+		</script>
+	</body>
+</html>

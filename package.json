@@ -1,0 +1,31 @@
+{
+  "name": "jquery.animated",
+  "version": "0.4.0",
+  "description": "Useful helper for Animate.css.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/felixexter/jquery.animated"
+  },
+  "keywords": [
+    "animate",
+    "animated",
+    "animation",
+    "animationend",
+    "animate.css"
+  ],
+  "author": "felixexter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/felixexter/jquery.animated/issues"
+  },
+  "homepage": "https://github.com/felixexter/jquery.animated",
+  "dependencies": {
+    "gulp": "^3.8.5",
+    "gulp-jscs": "^1.1.2",
+    "gulp-jshint": "^1.8.4",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^0.3.1",
+    "gulp-util": "^3.0.1",
+    "jshint-stylish": "^0.4.0"
+  }
+}
