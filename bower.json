@@ -1,0 +1,28 @@
+{
+  "name": "jquery.animated",
+  "main": "jquery.animated.js",
+  "version": "0.4.0",
+  "homepage": "https://github.com/felixexter/jquery.animated",
+  "authors": [
+    "felixexter <felixexter@ya.ru>"
+  ],
+  "description": "Useful helper for Animate.css.",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "animate",
+    "animated",
+    "animation",
+    "animationend",
+    "animate.css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "!jquery.animated.js",
+    "!jquery.animated.min.js"
+  ]
+}
