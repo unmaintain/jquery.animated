@@ -1,3 +1,5 @@
+> ### ⚠️ This project in not maintained! Fork for any improvements!
+
 # jquery.animated.js
 
 Useful helper for [`Animate.css`](https://github.com/daneden/animate.css). If you wanna use other animations, just include another stylessheet & set custom options.
